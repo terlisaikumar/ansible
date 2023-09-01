@@ -2,10 +2,10 @@
   hosts: practise
   task:
   - name: installation of ngnix server
-      ansible.builtin.yum:
-        name: nginx
-        state: installed
-    - name: starting the nginx service
-      ansible.builtin.service:
-        name: service
-        state: started
+    ansible.builtin.yum:
+      name: nginx
+      state: installed
+  - name: starting the nginx service
+    ansible.builtin.service:
+      name: service
+      state: started
