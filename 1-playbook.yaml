@@ -1,5 +1,6 @@
 - name: install ngnix
   hosts: practise
+  become: yes
   tasks:
   - name: installation of ngnix server
     ansible.builtin.yum:
